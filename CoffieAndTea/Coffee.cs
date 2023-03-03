@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace i02_1_TemplateMethod
 {
-
-    class Coffee : CafiineBevarage
+    class Coffee
+    {
         {
-        public override void prepareRecipe()
-        { 
             boilWater();
             brewCoffeeGrinds();
             pourInCup();
@@ -21,6 +19,7 @@ namespace i02_1_TemplateMethod
         {
             Console.WriteLine("Adding Sugar and Milk");
         }
+
         private void pourInCup()
         {
             Console.WriteLine("Pouring into cup");
@@ -34,11 +33,6 @@ namespace i02_1_TemplateMethod
         private void boilWater()
         {
             Console.WriteLine("Boiling water");
-        }
-
-        public override void prepareRecipe()
-        {
-            throw new NotImplementedException();
         }
     }
 }
