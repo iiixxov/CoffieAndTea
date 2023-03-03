@@ -8,7 +8,17 @@ namespace i02_1_TemplateMethod
 {
     abstract class CafiineBevarage
     {
-        public abstract void prepareRecipe(); 
+        public virtual void prepareRecipe()
+        {
+            boilWater();
+            brew();
+            pourInCup();
+            addCondiment();
+        } 
+
+        public abstract void brew();
+
+        public abstract void addCondiment();
         
         public virtual void boilWater()
         {

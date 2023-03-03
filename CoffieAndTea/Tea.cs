@@ -9,28 +9,14 @@ namespace i02_1_TemplateMethod
 
     class Tea : CafiineBevarage
     {
-        public override void prepareRecipe()
-        {
-            boilWater();
-            steepTeaBag();
-            pourInCup();
-            addLemon();
-        }
-
-        private void addLemon()
+        public override void addCondiment()
         {
             Console.WriteLine("Adding lemon");
         }
 
-        private void pourInCup()
-        {
-            Console.WriteLine("Pouring into cup");
-        }
-
-        private void steepTeaBag()
+        public override void brew()
         {
             Console.WriteLine("Steeping the tea");
         }
-
     }
 }
