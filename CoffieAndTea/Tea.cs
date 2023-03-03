@@ -9,6 +9,7 @@ namespace i02_1_TemplateMethod
 
     class Tea : CafiineBevarage
     {
+        public override void prepareRecipe()
         {
             boilWater();
             steepTeaBag();
