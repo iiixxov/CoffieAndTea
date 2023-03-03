@@ -8,14 +8,14 @@ namespace i02_1_TemplateMethod
 {
     abstract class CafiineBevarage
     {
-        public abstract void PrepareRecipe(); 
+        public abstract void prepareRecipe(); 
         
-        public virtual void BoilWater()
+        public virtual void boilWater()
         {
             Console.WriteLine("Boiling water");
         }
         
-        public virtual void PourlnCup()
+        public virtual void pourInCup()
         {
             Console.WriteLine("Pouring into cup");
         }
